@@ -1,0 +1,100 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/* Container */
+.container {
+    max-width: 600px;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 15px rgba(159, 196, 220);
+    margin: auto;
+}
+
+/* Title */
+h2 {
+    color: #343a40;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Choice Buttons */
+.choices {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.choices input {
+    display: none;
+}
+
+.btn-choice {
+    cursor: pointer;
+    padding: 20px;
+    border: 3px solid #a9d1ea;
+    border-radius: 12px;
+    font-size: 50px;
+    transition: all 0.3s ease;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a9d1ea;
+    background-color: white;
+}
+
+.btn-choice:hover,
+.choices input:checked + .btn-choice {
+    background-color: #a9d1ea;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Play Button */
+#playButton {
+    margin-top: 30px;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 8px;
+}
+
+/* Message Display */
+#message {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: #333;
+}
+/* Scoreboard */
+.scoreboard {
+    text-align: center;
+    margin: 20px 0;
+    padding: 15px;
+    background: #e1f0fa;
+    border-radius: 8px;
+}
+
+/* Align scores in a row */
+.scores {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 10px;
+}
+
+/* Styling for score numbers */
+.scores p {
+    font-size: 22px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
