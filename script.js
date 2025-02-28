@@ -8,9 +8,7 @@ function getComputerChoice() {
 }
 
 function determineWinner() {
-    // Get selected player choice
     const playerChoice = document.querySelector('input[name="choice"]:checked');
-
     if (!playerChoice) {
         document.getElementById("message").textContent = "Please select an option!";
         return;
@@ -39,8 +37,9 @@ function determineWinner() {
         resultMessage += "You lose!";
     }
 
-    // Display result
     document.getElementById("message").textContent = resultMessage;
+    playerChoice.checked = false;
+
 }
 document.querySelectorAll('input[name="choice"]').forEach(choice => {
     choice.addEventListener("change", determineWinner);
