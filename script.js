@@ -38,7 +38,9 @@ function determineWinner() {
     }
 
     document.getElementById("message").textContent = resultMessage;
-    playerChoice.checked = false;
+    setTimeout(() => {
+        playerChoice.checked = false;
+    }, 500);
 
 }
 document.querySelectorAll('input[name="choice"]').forEach(choice => {
